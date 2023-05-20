@@ -79,8 +79,9 @@ minute = (seconds_in_today % seconds_in_hour) // seconds_in_minute
 seconds = (seconds_in_today % seconds_in_hour % seconds_in_minute)
 
 
-print(year_now, calculate_date_from_days(days_passed_in_year))
+date = calculate_date_from_days(days_passed_in_year)
+print(year_now, date[0], date[1])
 
-print(epoch, days_epoch, year_now, days_passed_in_year)
+# print(epoch, days_epoch, year_now, days_passed_in_year)
 print(f'{hour}:{minute}:{seconds}')
-print(get_number_of_leapyears_since_1348(1402))
+# print(get_number_of_leapyears_since_1348(1402))
